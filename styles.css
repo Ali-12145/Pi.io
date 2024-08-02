@@ -353,13 +353,14 @@ button{
 }
 
 
-.content-cloud{
+.dev-content-cloud{
     background-image: linear-gradient(to bottom, #23121c, #361a31, #45254c, #4e326b, #4d438d, #3f509a, #2b5ba4, #0067ad, #006b9b, #006b85, #2e6870, #486462);
     width: 100%;
     display: flex;
     justify-content: space-around;
     line-height: 1.2;
     height: 60vh;
+    padding-top: 150px;
 }
 
 .left-cloud{
