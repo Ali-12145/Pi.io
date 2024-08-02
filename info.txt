@@ -1,0 +1,19 @@
+ibm plex sans
+poppins
+
+
+
+
+pallete
+
+background: linear-gradient(220.55deg, #4063BC 0%, #6B0013 100%); 
+headline #fffffe
+primary 
+paragrapj #b8c1ec
+buton #eebbc3
+tbn txt #232946
+
+bg #232946
+
+main section #b8c1ec
+main heading #232946
