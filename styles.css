@@ -383,6 +383,9 @@ button {
     width: 50%;
     text-align: start;
 }
+ .closebtn{
+    margin-left: auto;
+ }
 
 .des-cloud {
     text-align: start !important;

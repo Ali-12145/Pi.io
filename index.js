@@ -3,3 +3,7 @@ $(".item-icon").on("click", function showSideBar() {
     $(".item-icon").css("display", "none");
 
 });
+
+$(".closebtn").on("click", function hideSideBar() {
+    $(".nav-bar-mob").css("display", "none");
+});
