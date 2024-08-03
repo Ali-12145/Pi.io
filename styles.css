@@ -212,16 +212,15 @@ button {
 
 
 .second {
-    height: 110vh;
+    height: 140vh;
     background-image: radial-gradient(circle, #3f2a36, #67353e, #894437, #9c5f25, #9a820d, #828e19, #649931, #3aa24e, #18925c, #028162, #31a896, #295e5b);
-
-
+    
 
 }
 
 
 .cloud {
-    width: 70%;
+    width: 80%;
     height: 40%;
     text-align: center;
     display: flex;
@@ -236,7 +235,6 @@ button {
 
 .cloud-head {
     font-size: 40px;
-    text-align: center;
     font-weight: normal;
 
 }
@@ -244,16 +242,15 @@ button {
 .cloud-desc {
     text-align: start;
     margin-top: 40px;
-    
     font-weight: 500;
-    font-size: 20px;
+    font-size: 28px;
     color: rgb(3, 2, 1)
 }
 
 .brand-det {
     display: flex;
     justify-content: center;
- }
+}
 
 .c-image {
 
@@ -267,10 +264,17 @@ button {
     padding-bottom: 20px;
 }
 
+.support {
+    display: flex;
+    justify-content: space-between;
+    height: 70vh;
+    width: 80%;
+    margin: 50px auto;
+}
 .descript {
     color: lightcyan;
     line-height: 1.2;
-    font-size: 20px;
+    font-size: 24px;
     text-align: start;
     margin-bottom: 30px;
     display: flex;
@@ -298,17 +302,12 @@ button {
     padding: 80px 50px 20px 50px;
 }
 
-.support {
-    display: flex;
-    height: 60vh;
-    width: 70%;
-    margin: 50px auto;
-}
 
 .supporthead {
     font-size: 36px;
-    margin-bottom: 10px;
+    margin: 0 0 30px 0;
     color: var(--primary-text-color);
+    
 }
 
 .description-support {
@@ -318,16 +317,23 @@ button {
     margin: 0 0 20px 0;
 }
 
+.support {
+}
 
+.supimg{
+    margin-top: 10%;
+    width: 100%;
+}
 
 .enterprise {
     background-image: linear-gradient(to right top, #23121c, #381532, #49194d, #53226f, #503096, #4341a6, #3050b5, #005fc2, #0069af, #006b91, #176975, #486462);
     height: 70vh;
+    display: flex;
     justify-content: center;
 }
 
 .enterprise-details {
-    width: 70%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
 }
@@ -365,12 +371,12 @@ button {
 
 .dev-content-cloud {
     background-image: linear-gradient(to bottom, #23121c, #361a31, #45254c, #4e326b, #4d438d, #3f509a, #2b5ba4, #0067ad, #006b9b, #006b85, #2e6870, #486462);
+    width: 100%;
     display: flex;
     justify-content: space-around;
     line-height: 1.2;
     height: 60vh;
     padding-top: 150px;
-    
 }
 
 .left-cloud {
@@ -402,7 +408,11 @@ button {
 
 @media screen and (max-width:1130px) {
 
-    
+    /* .buttons{ 
+        display: block;
+        padding-top: 30px;
+        text-align: center;
+    } */
     .svg1 {
         display: none;
     }
@@ -424,14 +434,31 @@ button {
         width: 50%;
     }
 
-    .supporthead{
-        font-size: 36px;
+    .support{
+        width: 90%;
+    }
+    .support-content{
+        width: 70%;
+    }
+    .imgsug{
+        width: 30%;
     }
     
-    .description-support{
-        font-size: 28px;
+    .support-content{
+        margin: 0;
+        padding: 0 0 10px 10px;
     }
- 
+    .description-support{
+        padding-top: 20px;
+        width: 90%;
+    }
+
+    .supporthead{
+        margin-bottom: 20px;
+    }
+   
+
+    
     
 
 }
@@ -441,15 +468,7 @@ button {
     .item-icon {
         display: block;
     }
-    .buttons{ 
-        display: block;
-        padding-top: 30px;
-        text-align: center;
-    }
 
-    .content{
-        width: 90%;
-    }
     .center-links {
         display: none;
     }
@@ -465,172 +484,60 @@ button {
     .content-image{
         width: 40%;
     }
-    .c-image{
-        width: 100%;
-    }
+    /* .c-image{
+        width: 200px;
+    } */
     
-
-
+    .second{
+        height: 100vh;
+    }
     .cloud{
         width: 90%;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .support-content{
-        width: 60%;
         
     }
-
-    .support-img{
-        width: 100%;
-        margin-top: 100px;
+    .content-image{
+        display: none;
     }
-    .support{
-        width: 90%;
-    }
-    .enterprise-details{
-        width: 90%;
-    }
-
-    .leftenter{
-        width: 70%;
-    }
-
-    .des-cloud{
-        width: 90%;
-    }
-
-}
-
-
-@media screen and (max-width:768px) {
-    .cloud{
+    .grid{
         display: block;
+        padding-left: 40px;
     }
+
     .content-cloud{
         width: 100%;
     }
-    .cloud-desc{
-        padding: 0;
-        font-size: 28px;
+    .cloud-head{
+        text-align: center;
     }
-    .content-image{
-        margin-left: auto;
-        margin-right: auto;
-    
+     .grid >:nth-child(3) {
+        display: none;
     }
-    .c-imageP{
-        padding: 0 !important;
-    }
-    .descript{
-        font-size: 28px;
-        margin:  0 ;
-        line-height: 1.2;
-    }
-    .grid{
-        padding: 15px 0 0 0;
-        display: grid;
-        grid-template-columns: 1fr;
-        
+     .grid >:nth-child(4) {
+        display: none;
     }
     
     .grid-item{
-        width: 90%;
-        line-height: 1.2;
-        height: 200px;
+        width: 80vw;
     }
-
-    .grid >:nth-child(3){
-        display: none;
+    .grid-item > .heading{
+        font-size: 32px;
     }
-    .support{
-        display: block;
-    }
-    .sup-img{
-        margin:auto;
-        width: 50%;
-        overflow: hidden;
-    }
-    
-
-    .supporthead{
-        font-size: 36px;
-    }
-    
-    .description-support{
+    .descript{
+        margin-top: 40px;
+        line-height: 1.5;
         font-size: 28px;
-        width: 90%;
     }
-   
-    
-    .support-content{
+     .right-cloud{
+        width: 30%;
+     }
+
+     .des-cloud{
         width: 80%;
-    }
-    
+        line-height: 1.5;
 
-    .enterprise-details{
-        display: flex;
-        padding-left: 30px;
-        justify-content: space-between;
-        flex-direction: column-reverse;
-
-    }
-
-    .rightenter{
-        width: 90%;
-    }
-    .leftenter{
-        width: 90%;
-        text-align: center;
-    }
-
-    .heading-ent{
+     }
+     .left-cloud>.heading{
         font-size: 36px;
-    }
+     }
 
-    .description-right{
-        font-size: 28px;
-        line-height: 1.2;
-    }
-
-
-    .dev-content-cloud{
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        padding-left: 30px;
-    }
-    .left-cloud{
-        width: 90%;
-    }
-
-    .dev-btn{
-        width: 250px;
-        
-    }
-
-    .rightcloud{
-        width: 90%;
-        margin: 0 auto;
-    }
-}
-
-
-
-
-
-@media screen and (max-width:576px){
-    .grid >:nth-child(4){
-        display: none;
-    }
-}
-
-@media screen and (max-width:464px){
-    .grid > :nth-child(2){
-        display: none;
-    }
-    .leftenter{
-        padding-top: 10px;
-    }
 }
