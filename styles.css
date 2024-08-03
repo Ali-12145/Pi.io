@@ -33,6 +33,7 @@
     height: 30px;
     width: 30px;
 }
+
 li {
     list-style-type: none;
 }
@@ -42,6 +43,7 @@ a {
     color: #2A1863;
     font-weight: 500;
 }
+
 .center-links,
 .right-links {
     display: flex;
@@ -49,19 +51,19 @@ a {
     border: plum;
     outline: plum;
     border-radius: 20px;
-    
+
 }
 
 .center-links {
     padding: 4px 50px;
     margin-right: 10%;
     margin-left: 15%;
-    
+
 }
 
 .right-links {
     padding: 4px 4px;
-    
+
 }
 
 .item {
@@ -81,8 +83,9 @@ a {
     display: flex;
     justify-content: center;
 }
-.content{
-    width: 50%; 
+
+.content {
+    width: 50%;
     padding: 100px 0;
 }
 
@@ -113,12 +116,14 @@ a {
 span {
     color: rgb(42, 24, 99);
 }
-.buttons{
+
+.buttons {
     padding-top: 30px;
     display: flex;
     justify-content: space-around;
 }
-button{
+
+button {
     padding: 10px 40px;
     border: plum;
     border-radius: 10px;
@@ -130,24 +135,23 @@ button{
 
 
 /* Mobile Side bar */
-.links li{
+.links li {
     padding: 10px 0px 10px 20px;
 }
 
-.nav-bar-mob > :first-child {
+.nav-bar-mob> :first-child {
     padding: 10px 0px 30px 20px
-
 }
 
-.links > li:hover{
+.links>li:hover {
     background-color: #eaeaea;
 }
 
-.links{
+.links {
     width: 100%;
 }
 
-.nav-bar-mob{
+.nav-bar-mob {
     position: fixed;
     top: 0;
     right: 0;
@@ -155,21 +159,21 @@ button{
     border-radius: 50px 10px;
     width: 250px;
     z-index: 2;
-    background-color:rgba(255, 255, 255, 0.285);
+    background-color: rgba(255, 255, 255, 0.285);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
     flex-direction: column;
     align-items: start;
-    transition:0.4s ease-in ;
+    transition: 0.4s ease-in;
     justify-content: start;
 }
 
-.herofoot{
+.herofoot {
     width: 100%;
     overflow: hidden;
 }
 
-.item-icon{
+.item-icon {
     margin-left: auto;
     margin-right: 50px;
     display: none;
@@ -183,7 +187,7 @@ button{
 
 
 
-.svg1{
+.svg1 {
     position: absolute;
     margin: -470px;
     transform: rotate(90deg);
@@ -195,6 +199,7 @@ button{
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
@@ -206,58 +211,62 @@ button{
 
 
 
-.second{
+.second {
     height: 110vh;
     background-image: radial-gradient(circle, #3f2a36, #67353e, #894437, #9c5f25, #9a820d, #828e19, #649931, #3aa24e, #18925c, #028162, #31a896, #295e5b);
 
-    
+
 
 }
 
 
-.cloud{
+.cloud {
     width: 70%;
     height: 40%;
     text-align: center;
     display: flex;
     justify-content: space-between;
-    
+
 }
-.content-cloud{
+
+.content-cloud {
     width: 50%;
     padding-top: 10%;
 }
-.cloud-head{
+
+.cloud-head {
     font-size: 40px;
     font-weight: normal;
-    
+
 }
-.cloud-desc{
+
+.cloud-desc {
     text-align: start;
     margin-top: 40px;
     padding-left: 20px;
-    font-weight:500;
+    font-weight: 500;
     font-size: 20px;
     color: rgb(3, 2, 1)
 }
-.brand-det{
+
+.brand-det {
     display: flex;
     justify-content: center;
 }
 
-.c-image{
-    
+.c-image {
+
     height: 250px;
     padding-top: 25%;
 }
 
-.heading{
+.heading {
     color: rgb(rgb(212, 197, 197), rgb(129, 150, 129), rgb(212, 212, 212));
     font-size: 32px;
     padding-bottom: 20px;
 }
 
-.descript{
+.descript {
     color: lightcyan;
     line-height: 1.2;
     font-size: 20px;
@@ -268,75 +277,78 @@ button{
 }
 
 
-.grid{
- 
+.grid {
+
     padding-top: 60px;
     justify-items: center;
     display: grid;
-    grid-template-columns: repeat(2 , minmax(250px,1fr));
-    grid-auto-rows:auto;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-auto-rows: auto;
 }
 
-.grid-item{
+.grid-item {
     width: 80%;
 
 }
-.support-content{
+
+.support-content {
 
     width: 60%;
     padding: 80px 50px 20px 50px;
 }
 
-.support{
+.support {
     display: flex;
 }
 
-.supporthead{
+.supporthead {
     font-size: 28px;
     margin-bottom: 10px;
     color: var(--primary-text-color);
 }
 
-.description-support{
+.description-support {
     color: var(--primary-text-color);
     width: 70%;
     font-size: 20px;
     margin: 0 0 20px 0;
 }
 
-.support{
+.support {
     height: 60vh;
     width: 70%;
     margin: 50px auto;
 }
 
 
-.enterprise{
+.enterprise {
     background-image: linear-gradient(to right top, #23121c, #381532, #49194d, #53226f, #503096, #4341a6, #3050b5, #005fc2, #0069af, #006b91, #176975, #486462);
     height: 70vh;
     display: flex;
     justify-content: center;
 }
 
-.enterprise-details{
-   width:  70%;
-   display: flex;
-   justify-content: space-between;
+.enterprise-details {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
 }
-.leftenter{
+
+.leftenter {
     color: rgb(212, 197, 197);
 
     padding-top: 100px;
     font-size: 24px;
 }
-.items{
+
+.items {
     display: flex;
     justify-content: start;
     padding-bottom: 30px;
 }
 
 
-.rightenter{
+.rightenter {
     padding-top: 120px;
     width: 50%;
     font-size: 24px;
@@ -344,16 +356,16 @@ button{
     line-height: 1.2;
 }
 
-.description-right{
+.description-right {
     color: rgb(212, 197, 197);
 }
 
-.btn{
+.btn {
     padding-top: 30px;
 }
 
 
-.dev-content-cloud{
+.dev-content-cloud {
     background-image: linear-gradient(to bottom, #23121c, #361a31, #45254c, #4e326b, #4d438d, #3f509a, #2b5ba4, #0067ad, #006b9b, #006b85, #2e6870, #486462);
     width: 100%;
     display: flex;
@@ -363,20 +375,96 @@ button{
     padding-top: 150px;
 }
 
-.left-cloud{
+.left-cloud {
     width: 50%;
     text-align: start;
 }
-.des-cloud{
+
+.des-cloud {
     text-align: start !important;
     width: 60%;
     font-size: 24px;
     color: rgb(212, 197, 197);
 }
 
-.cloud-dev{
+.cloud-dev {
     height: 300px;
 }
 
 
 
+@media screen and (max-width :1515px) {
+    button {
+        padding: 10px 10px;
+        width: 200px;
+        margin-top: 15px;
+    }
+
+}
+
+@media screen and (max-width:1130px) {
+
+    /* .buttons{ 
+        display: block;
+        padding-top: 30px;
+        text-align: center;
+    } */
+    .svg1 {
+        display: none;
+    }
+
+    .content-cloud {
+        width: 60%;
+        text-align: start;
+    }
+
+    .cloud {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .content {
+        width: 80%;
+    }
+    .content-cloud{
+        width: 50%;
+    }
+ 
+    
+
+}
+
+
+@media screen and (max-width:1000px) {
+    .item-icon {
+        display: block;
+    }
+
+    .center-links {
+        display: none;
+    }
+
+    .right-links {
+        display: none;
+    }
+
+    .header {
+        text-align: center;
+        width: 100%;
+    }
+    .content-image{
+        width: 40%;
+    }
+    .c-image{
+        width: 200px;
+    }
+
+
+    .cloud{
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+}
