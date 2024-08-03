@@ -236,6 +236,7 @@ button {
 
 .cloud-head {
     font-size: 40px;
+    text-align: center;
     font-weight: normal;
 
 }
@@ -243,7 +244,7 @@ button {
 .cloud-desc {
     text-align: start;
     margin-top: 40px;
-    padding-left: 20px;
+    
     font-weight: 500;
     font-size: 20px;
     color: rgb(3, 2, 1)
@@ -252,7 +253,7 @@ button {
 .brand-det {
     display: flex;
     justify-content: center;
-}
+ }
 
 .c-image {
 
@@ -299,10 +300,13 @@ button {
 
 .support {
     display: flex;
+    height: 60vh;
+    width: 70%;
+    margin: 50px auto;
 }
 
 .supporthead {
-    font-size: 28px;
+    font-size: 36px;
     margin-bottom: 10px;
     color: var(--primary-text-color);
 }
@@ -310,21 +314,15 @@ button {
 .description-support {
     color: var(--primary-text-color);
     width: 70%;
-    font-size: 20px;
+    font-size: 28px;
     margin: 0 0 20px 0;
 }
 
-.support {
-    height: 60vh;
-    width: 70%;
-    margin: 50px auto;
-}
 
 
 .enterprise {
     background-image: linear-gradient(to right top, #23121c, #381532, #49194d, #53226f, #503096, #4341a6, #3050b5, #005fc2, #0069af, #006b91, #176975, #486462);
     height: 70vh;
-    display: flex;
     justify-content: center;
 }
 
@@ -367,12 +365,12 @@ button {
 
 .dev-content-cloud {
     background-image: linear-gradient(to bottom, #23121c, #361a31, #45254c, #4e326b, #4d438d, #3f509a, #2b5ba4, #0067ad, #006b9b, #006b85, #2e6870, #486462);
-    width: 100%;
     display: flex;
     justify-content: space-around;
     line-height: 1.2;
     height: 60vh;
     padding-top: 150px;
+    
 }
 
 .left-cloud {
@@ -404,11 +402,7 @@ button {
 
 @media screen and (max-width:1130px) {
 
-    /* .buttons{ 
-        display: block;
-        padding-top: 30px;
-        text-align: center;
-    } */
+    
     .svg1 {
         display: none;
     }
@@ -429,6 +423,14 @@ button {
     .content-cloud{
         width: 50%;
     }
+
+    .supporthead{
+        font-size: 36px;
+    }
+    
+    .description-support{
+        font-size: 28px;
+    }
  
     
 
@@ -439,7 +441,15 @@ button {
     .item-icon {
         display: block;
     }
+    .buttons{ 
+        display: block;
+        padding-top: 30px;
+        text-align: center;
+    }
 
+    .content{
+        width: 90%;
+    }
     .center-links {
         display: none;
     }
@@ -456,15 +466,171 @@ button {
         width: 40%;
     }
     .c-image{
-        width: 200px;
+        width: 100%;
     }
+    
 
 
     .cloud{
-        width: 80%;
+        width: 90%;
         display: flex;
         justify-content: space-around;
     }
 
+    .support-content{
+        width: 60%;
+        
+    }
 
+    .support-img{
+        width: 100%;
+        margin-top: 100px;
+    }
+    .support{
+        width: 90%;
+    }
+    .enterprise-details{
+        width: 90%;
+    }
+
+    .leftenter{
+        width: 70%;
+    }
+
+    .des-cloud{
+        width: 90%;
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+    .cloud{
+        display: block;
+    }
+    .content-cloud{
+        width: 100%;
+    }
+    .cloud-desc{
+        padding: 0;
+        font-size: 28px;
+    }
+    .content-image{
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    .c-imageP{
+        padding: 0 !important;
+    }
+    .descript{
+        font-size: 28px;
+        margin:  0 ;
+        line-height: 1.2;
+    }
+    .grid{
+        padding: 15px 0 0 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    
+    .grid-item{
+        width: 90%;
+        line-height: 1.2;
+        height: 200px;
+    }
+
+    .grid >:nth-child(3){
+        display: none;
+    }
+    .support{
+        display: block;
+    }
+    .sup-img{
+        margin:auto;
+        width: 50%;
+        overflow: hidden;
+    }
+    
+
+    .supporthead{
+        font-size: 36px;
+    }
+    
+    .description-support{
+        font-size: 28px;
+        width: 90%;
+    }
+   
+    
+    .support-content{
+        width: 80%;
+    }
+    
+
+    .enterprise-details{
+        display: flex;
+        padding-left: 30px;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+
+    }
+
+    .rightenter{
+        width: 90%;
+    }
+    .leftenter{
+        width: 90%;
+        text-align: center;
+    }
+
+    .heading-ent{
+        font-size: 36px;
+    }
+
+    .description-right{
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+
+    .dev-content-cloud{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        padding-left: 30px;
+    }
+    .left-cloud{
+        width: 90%;
+    }
+
+    .dev-btn{
+        width: 250px;
+        
+    }
+
+    .rightcloud{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:576px){
+    .grid >:nth-child(4){
+        display: none;
+    }
+}
+
+@media screen and (max-width:464px){
+    .grid > :nth-child(2){
+        display: none;
+    }
+    .leftenter{
+        padding-top: 10px;
+    }
 }
