@@ -267,7 +267,7 @@ button {
 .support {
     display: flex;
     justify-content: space-between;
-    height: 70vh;
+    height: fit-content;
     width: 80%;
     margin: 50px auto;
 }
@@ -322,7 +322,7 @@ button {
 
 .supimg{
     margin-top: 10%;
-    width: 100%;
+    width: 80%;
 }
 
 .enterprise {
@@ -476,6 +476,10 @@ button {
         display: none;
     }
 
+    .herosection{
+        height: fit-content;
+    }
+
     .right-links {
         display: none;
     }
@@ -492,7 +496,7 @@ button {
     } */
     
     .second{
-        height: 100vh;
+        height: fit-content;
     }
     .cloud{
         width: 90%;
@@ -526,7 +530,7 @@ button {
         font-size: 32px;
     }
     .descript{
-        margin-top: 40px;
+        margin-top: .75em;
         line-height: 1.5;
         font-size: 28px;
     }
@@ -536,13 +540,14 @@ button {
 
      .des-cloud{
         width: 80%;
-        line-height: 1.5;
+        line-height: 1;
 
      }
      .left-cloud>.heading{
         font-size: 36px;
      }
 
+     
 }
 
 @media screen and (max-width:768px){
@@ -555,9 +560,6 @@ button {
         text-align: center;
     }
 
-    .grid >:nth-child(2) {
-        display: none;
-    }
     .support-content{
         width: 100%;
     }
@@ -565,7 +567,7 @@ button {
         flex-direction: column;
     }
     .imgsup{
-        height: 300px;
+        height: 50%;
     }
     .enterprise{
         height: fit-content;
@@ -593,8 +595,10 @@ button {
         text-align: start;
     }
     .cloud-dev{
-        margin: 10px -100px 0 50%;
-        width: 200px;
-        height: 200px;
+        margin: auto;
+        width: 30%;
+        height: 30%;
+        padding: 10px 0 10px 10px;
+        
     }
 }
